@@ -26,6 +26,8 @@ RSpec.configure do |config|
   # Must be false for DatabaseCleaner
   config.use_transactional_fixtures = false
 
+  config.backtrace_exclusion_patterns << /.*(bundler|gems|rails_helper).*/
+
   # If true, the base class of anonymous controllers will be inferred
   # automatically. This will be the default behavior in future versions of
   # rspec-rails.
