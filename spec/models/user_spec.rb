@@ -82,7 +82,7 @@ RSpec.describe User do
   end
 
   describe '#to_s' do
-    specify { expect(User.new(email: "yolo").to_s).to eq("yolo") }
+    specify { expect(User.new(email: "email@example.com").to_s).to eq("email@example.com") }
   end
 
 end
