@@ -1,11 +1,13 @@
 # TFG Template
 
-This is a RoR template using The Frontier Group's (TFG) SOE.
+This is an outdated RoR template, that I formerly used when I was working at The Frontier Group.
+
+Now I use it as a starting point for demonstrating basic Rails functionality and RSpec.
 
 ## Usage
 
 ```
-git clone https://github.com/thefrontiergroup/rails-template
+git clone https://github.com/jordanmaguire/rails-template
 cd rails-template
 gem install bundler
 bundle
@@ -20,8 +22,8 @@ The output of this script should give you the instructions you will need.
 
 ### Configuration
 
-- Mailer configuration for development, staging (jazz), production (jazz), and test environment
-- PostgreSQL with TFG SOE database.yml. No configuration required.
+- Mailer configuration for development, staging, production, and test environment (`config/smtp.yml.sample`)
+- PostgreSQL configuration (`config/database.yml.sample`).
 - RVM Support via `.ruby-gemset` and `.ruby-version`
 - Seeds configuration via SeedHelper, including seeding some initial Users
 
