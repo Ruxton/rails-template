@@ -71,7 +71,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
-    colorize (0.7.7)
     concurrent-ruby (1.0.2)
     database_cleaner (1.5.3)
     debug_inspector (0.0.2)
@@ -222,9 +221,6 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    seed_helper (1.13.0)
-      colorize (~> 0.7.5)
-      rake (>= 10.0.0)
     semantic-ui-sass (2.2.4.0)
       sass (>= 3.2)
     sexp_processor (4.7.0)
@@ -302,7 +298,6 @@ DEPENDENCIES
   rspec-rails
   rspec_junit_formatter
   sass-rails
-  seed_helper
   semantic-ui-sass
   shoulda-matchers
   simple_form
