@@ -26,23 +26,6 @@ protected
     stored_location_for(:user) || AfterSignInPath.new(resource).to_s
   end
 
-# Strong Parameters
-
-  def strong_params_for(resource, params_key=nil)
-    params_key = infer_params_key(resource) unless params_key.present?
-    params.require(params_key).permit(*permitted_attributes_for(resource))
-  end
-
-  def permitted_attributes_for(klass_or_instance)
-    StrongParamsGenerator.new(current_user, klass_or_instance).permitted_attributes
-  end
-
-  def infer_params_key(resource)
-    # outputs :foo_bar when input is FooBar or when resource is an instance of FooBar.
-    klass = resource.is_a?(Class) ? resource : resource.class
-    klass.name.underscore.to_sym
-  end
-
 private
 
   def user_not_authorized
