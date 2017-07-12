@@ -17,10 +17,3 @@
       = f.button :submit, "Sign in", class: "primary fluid large"
 
     = render "devise/shared/links"
-
-    - if Rails.application.config.should_show_easy_login
-      .ui.left.aligned.secondary.segment.easy-sign-in
-        %h3 Easy Sign-in
-        %ul.list
-          - User.roles.keys.each do |role_name|
-            %li= link_to "Sign in as #{role_name.titleize}", '#', data: { email: "#{role_name}@example.com", password: "password" }

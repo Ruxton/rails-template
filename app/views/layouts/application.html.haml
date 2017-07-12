@@ -36,4 +36,3 @@
           = content_for?(:content) ? yield(:content) : yield
 
     = yield(:javascripts)
-    = javascript_include_tag "easy-sign-in" if Rails.application.config.should_show_easy_login

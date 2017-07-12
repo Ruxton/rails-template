@@ -2,8 +2,6 @@
 # be served anyway.
 #
 Rails.application.config.assets.precompile += %w(
-  easy-sign-in.js
-  easy-sign-in.css
   public.js
   public.css
   member.js

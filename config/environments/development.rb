@@ -47,7 +47,4 @@ Rails.application.configure do
   # Seed data
   config.should_seed_application_data = true
 
-  # Shows some menu options on sign in that can sign in the seed users
-  config.should_show_easy_login = true
-
 end
