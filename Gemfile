@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rails'
+gem 'rails', '~> 5.0.0'
 
 # Database & ORM
 gem 'paranoia'
-gem 'pg'
+gem 'pg', '0.21'
 gem 'ransack'
 
 # Authentication & Authorization
@@ -35,7 +35,6 @@ gem 'responders'
 group :development do
   gem 'better_errors'
   gem 'letter_opener'
-  gem 'quiet_assets'
   gem 'web-console'
 end
 
